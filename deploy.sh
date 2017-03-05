@@ -37,7 +37,7 @@ make_task_def() {
 	    "image": "bellkev/nginx-base:stable",
 	    "portMappings": [
 		{
-		    "containerPort": 80,
+		    "containerPort": 8000,
 		    "hostPort": %s
 		}
 	    ],
@@ -66,7 +66,7 @@ register_definition() {
 
 deploy_cluster() {
 
-    host_port=80
+    host_port=8000
     family="circle-ecs-cluster"
 
     make_task_def
