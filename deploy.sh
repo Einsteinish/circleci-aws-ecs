@@ -37,7 +37,7 @@ make_task_def() {
 	    "image": "bellkev/nginx-base:stable",
 	    "portMappings": [
 		{
-		    "containerPort": 8000,
+		    "containerPort": 80,
 		    "hostPort": %s
 		}
 	    ],
